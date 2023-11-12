@@ -1,0 +1,33 @@
+Taller Pila (Stack) de Objetos:
+
+Un cine de un pueblo pequeño nos propone hacer una aplicación (aunque yo les dije que no lo hicieran  ) 
+para controlar la información de las películas en estreno.
+
+El conjunto de películas en estreno se almacenará en una pila de la librería Stack en Java,
+dentro de los requerimientos que especifica la compañía de Cine es que tendrá que calcular la 
+entrada según la edad de la persona (mínimo 5 años).
+
+La edad de las personas se genera aleatoriamente entre 5 y 60 años. 
+Los atributos privados (implementar POJO) para la clase película son:
+
+private int idPelicula;
+private String nomPelicula;
+private float duracion;
+private int edad; 
+private float valorBoleta;
+
+Se relaciona la lista de precios:
+
+EDAD	PRECIO
+Entre 5 y 10 años	$3.000 (Niños)
+Entre 11 y 17 años	$7.000 (Adolescentes)
+Mayor de 18 años	$9.000 (Adultos)
+
+El programa principal deberá tener el siguiente menú de opciones:
+
+1.	Registrar una película en la pila.
+2.	Mostrar los próximos estrenos dado los N estrenos que se desean ver: es decir, deberá solicitar al usuario cuantos próximos estrenos desea ver y esto mostrar la información de cada película desde el tope de la Pila.  Esta información podrá ser almacenada en un archivo.
+3.	Mostrar los estrenos antiguos dado los N estrenos que se desean ver: es decir, deberá solicitar al usuario cuantos estrenos antiguos desea ver y esto mostrar la información de cada película desde la base (primer elemento agregado, ojo esto implica que no es desde el tope) de la Pila. Esta información podrá ser almacenada en un archivo.
+4.	Totales por categoría (para ello primero deberá especificar la categoría: Niños, Adolescentes o Adultos – recuerde que esto se determina de acuerdo al valor de boleta pagado): y para la categoría seleccionada mostrar promedio recaudo y total recaudado.
+5.	Dada una categoría (Niños, Adolescentes o Adultos) eliminar la información del objeto de la Pila (Stack) de la categoría seleccionada.
+6.	Salir.
